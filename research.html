@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Research — Md Mominul Haque</title>
-<meta name="description" content="Research threads: explainable medical image segmentation, test-time adaptation for medical imaging, and lightweight vision transformers for diagnostic imaging.">
+<meta name="description" content="Research threads: explainable medical image segmentation, test-time adaptation for medical imaging, lightweight vision transformers for diagnostic imaging, and vision beyond the clinic — surveillance and geospatial imaging.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
@@ -27,7 +27,7 @@
 </header>
 
 <section class="hero">
-  <svg class="hero-vessel" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="opacity:0.1;">
+  <svg class="hero-vessel" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="opacity:0.3;">
     <path d="M250 20 C 260 90, 230 120, 250 180 C 270 240, 320 250, 340 310" stroke="currentColor" stroke-width="2"/>
     <path d="M250 180 C 220 210, 160 210, 130 260" stroke="currentColor" stroke-width="1.6"/>
     <path d="M130 260 C 100 290, 95 330, 70 360" stroke="currentColor" stroke-width="1.2"/>
@@ -41,9 +41,11 @@
 <main>
   <section class="block wrap">
     <p class="lede">
-      My research sits at the intersection of computer vision and clinical imaging: models that are small enough
-      to deploy, and transparent enough for a clinician to trust. The three threads below are connected — each
-      builds on lessons from the last.
+      My research sits at the intersection of computer vision, deep learning, and real-world deployment
+      constraints: models that are small enough to run where compute is limited, and transparent enough
+      for a domain expert to trust. Medical imaging is where this work runs deepest, but the same
+      lightweight, explainable approach carries over to surveillance and geospatial imaging — the four
+      threads below trace that progression.
     </p>
   </section>
 
@@ -97,6 +99,28 @@
         </p>
         <div class="links">
           <a href="publications.html">See related manuscript</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="thread">
+      <div>
+        <h3>Vision beyond the clinic</h3>
+        <span class="thread-meta">Surveillance &amp; geospatial</span>
+      </div>
+      <div>
+        <p>
+          The same lightweight, adaptive design principles extend past medical imaging. My Noise-Space Adaptive
+          Multi-Domain Filtering framework was built as a unified solution for both low-light urban surveillance
+          footage and medical retinal imaging — two domains that share the same underlying problem of noisy,
+          degraded input. A separate line of work applies a lightweight MobileNetV2 U-Net with SCSE attention to
+          multi-class land-cover classification on the DeepGlobe dataset, a geospatial segmentation problem
+          directly relevant to environmental and agricultural monitoring. I'm actively looking to extend this
+          approach further into applied computer vision — image classification, object detection, and
+          monitoring systems for security and agriculture.
+        </p>
+        <div class="links">
+          <a href="publications.html">See related manuscripts</a>
         </div>
       </div>
     </div>
