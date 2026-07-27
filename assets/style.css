@@ -219,6 +219,29 @@ h2.section-title::before {
 
 p.lede { font-size: 1.08rem; color: var(--text); max-width: 68ch; }
 
+/* Justified prose on comfortable widths; ragged-right on phones where
+   justification without proper line-breaking looks worse, not better. */
+p.lede,
+.card p,
+.thread p,
+.pub .pub-meta {
+  text-align: justify;
+  text-justify: inter-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+@media (max-width: 600px) {
+  p.lede,
+  .card p,
+  .thread p,
+  .pub .pub-meta {
+    text-align: left;
+    -webkit-hyphens: none;
+    hyphens: none;
+  }
+}
+
 /* ============================================================
    Cards / grids
    ============================================================ */
@@ -346,6 +369,21 @@ table.cv-table th {
   text-transform: uppercase;
   font-size: 0.7rem;
   letter-spacing: 0.06em;
+}
+
+@media (max-width: 600px) {
+  table.cv-table, table.cv-table tbody, table.cv-table tr,
+  table.cv-table th, table.cv-table td {
+    display: block;
+    width: 100%;
+  }
+  table.cv-table tr { border-bottom: 1px dashed var(--line); padding-bottom: 10px; margin-bottom: 10px; }
+  table.cv-table th, table.cv-table td { border-bottom: none; padding: 2px 0; }
+  table.cv-table th { color: var(--gold); }
+}
+
+@media (max-width: 480px) {
+  ul.highlights li { grid-template-columns: 72px 1fr; gap: 12px; }
 }
 
 /* contact */
