@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research — Md Mominul Haque</title>
+<meta name="description" content="Research threads: explainable medical image segmentation, test-time adaptation for medical imaging, and lightweight vision transformers for diagnostic imaging.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">Md Mominul Haque</a>
+    <nav class="primary-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html" aria-current="page">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <svg class="hero-vessel" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="opacity:0.1;">
+    <path d="M250 20 C 260 90, 230 120, 250 180 C 270 240, 320 250, 340 310" stroke="currentColor" stroke-width="2"/>
+    <path d="M250 180 C 220 210, 160 210, 130 260" stroke="currentColor" stroke-width="1.6"/>
+    <path d="M130 260 C 100 290, 95 330, 70 360" stroke="currentColor" stroke-width="1.2"/>
+  </svg>
+  <div class="wrap" style="padding-top:52px; padding-bottom:36px;">
+    <p class="eyebrow">Research</p>
+    <h1 class="name" style="font-size:clamp(1.9rem,4vw,2.6rem);">What I work on</h1>
+  </div>
+</section>
+
+<main>
+  <section class="block wrap">
+    <p class="lede">
+      My research sits at the intersection of computer vision and clinical imaging: models that are small enough
+      to deploy, and transparent enough for a clinician to trust. The three threads below are connected — each
+      builds on lessons from the last.
+    </p>
+  </section>
+
+  <section class="block wrap">
+    <div class="thread">
+      <div>
+        <h3>Explainable medical image segmentation</h3>
+        <span class="thread-meta">MVT-Net</span>
+      </div>
+      <div>
+        <p>
+          My MSc thesis introduced MVT-Net, a lightweight hybrid CNN-Transformer for retinal vessel segmentation.
+          The design goal was to combine a Transformer's global context with a CNN's efficiency, while keeping
+          the model small enough for practical deployment — and pairing it with explainability methods so that
+          a clinician can see which regions of the image drove a given prediction, rather than treating the
+          segmentation as a black box.
+        </p>
+        <div class="links">
+          <a href="publications.html">See related manuscript</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="thread">
+      <div>
+        <h3>Test-time adaptation for medical imaging</h3>
+        <span class="thread-meta">In progress</span>
+      </div>
+      <div>
+        <p>
+          Segmentation models trained on one imaging site or device often degrade when the input distribution
+          shifts — a different probe, a noisier scan, a different patient population. This thread develops
+          test-time adaptation techniques for echocardiographic segmentation, evaluated on public benchmarks
+          including CAMUS and EchoNet-Dynamic, that let a model adjust to shifted inputs without full retraining.
+        </p>
+      </div>
+    </div>
+
+    <div class="thread">
+      <div>
+        <h3>Lightweight vision transformers for diagnostic imaging</h3>
+        <span class="thread-meta">SwinMedNet</span>
+      </div>
+      <div>
+        <p>
+          A line of work exploring Swin Transformer variants for diagnostic classification tasks — starting with
+          diabetic retinopathy classification on the RetinaMNIST2D dataset — aimed at keeping transformer-based
+          models efficient enough for settings where compute is limited.
+        </p>
+        <div class="links">
+          <a href="publications.html">See related manuscript</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>&copy; 2026 Md Mominul Haque</span>
+    <span>Seri Iskandar, Perak, Malaysia</span>
+  </div>
+</footer>
+
+</body>
+</html>
