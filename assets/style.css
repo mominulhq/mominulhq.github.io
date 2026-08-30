@@ -733,6 +733,8 @@ table.cv-table th {
   font-size: 0.98rem;
   color: var(--ink);
   font-weight: 500;
+  /* Add this line to fix the email overflow: */
+  overflow-wrap: anywhere; 
 }
 
 /* footer */
