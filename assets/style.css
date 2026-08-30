@@ -774,8 +774,34 @@ table.cv-table th {
   box-shadow: 0 0 0 6px rgba(198, 161, 91, 0.1), 0 20px 40px -16px rgba(0, 0, 0, 0.6);
 }
 
-.avatar img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+/* avatar */
+.avatar {
+  width: 190px;  /* Increased from 138px */
+  height: 190px; /* Increased from 138px */
+  border-radius: 50%;
+  background: var(--ink-2);
+  color: var(--text-on-ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 2.4rem;
+  margin-bottom: 28px;
+  overflow: hidden;
+  border: 2px solid var(--gold);
+  box-shadow: 0 0 0 6px rgba(198,161,91,0.1), 0 20px 40px -16px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease; /* Adds a smooth hover effect */
+}
+
+.avatar:hover {
+  transform: scale(1.02); /* Slight zoom when hovered */
+}
+
+/* Keeps the image appropriately sized on smaller mobile screens */
+@media (max-width: 600px) {
+  .avatar {
+    width: 140px;
+    height: 140px;
+    margin-bottom: 20px;
+  }
 }
