@@ -27,16 +27,38 @@
 </header>
 
 <section class="hero">
-  <svg class="hero-vessel" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="opacity:0.28;">
-    <path d="M250 20 C 260 90, 230 120, 250 180 C 270 240, 320 250, 340 310" stroke="currentColor" stroke-width="2"/>
-    <path d="M250 180 C 220 210, 160 210, 130 260" stroke="currentColor" stroke-width="1.6"/>
-    <path d="M130 260 C 100 290, 95 330, 70 360" stroke="currentColor" stroke-width="1.2"/>
-    <path d="M340 310 C 360 350, 350 380, 380 420" stroke="currentColor" stroke-width="1.4"/>
+  <!-- Premium Animated 3-Layer SVG -->
+  <svg class="hero-vessel" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <!-- Deep Learning / Transformer Network Layer -->
+    <g class="layer-network">
+      <path d="M150 120 L250 180 L350 140" stroke="currentColor" stroke-width="1" stroke-dasharray="4 4"/>
+      <path d="M250 180 L300 300 L180 320 Z" stroke="currentColor" stroke-width="1" stroke-dasharray="4 4"/>
+      <circle cx="150" cy="120" r="4" fill="currentColor"/>
+      <circle cx="350" cy="140" r="4" fill="currentColor"/>
+      <circle cx="300" cy="300" r="4" fill="currentColor"/>
+      <circle cx="180" cy="320" r="4" fill="currentColor"/>
+    </g>
+    <!-- Medical Imaging / Organic Vessel Layer -->
+    <g class="layer-organic">
+      <path d="M250 20 C 260 90, 230 120, 250 180 C 270 240, 320 250, 340 310" stroke="currentColor" stroke-width="2"/>
+      <path d="M250 180 C 220 210, 160 210, 130 260" stroke="currentColor" stroke-width="1.6"/>
+      <path d="M130 260 C 100 290, 95 330, 70 360" stroke="currentColor" stroke-width="1.2"/>
+      <path d="M340 310 C 360 350, 350 380, 380 420" stroke="currentColor" stroke-width="1.4"/>
+      <path d="M250 180 C 260 150, 300 140, 320 100" stroke="currentColor" stroke-width="1.4"/>
+    </g>
+    <!-- Computer Vision / Object Detection Layer -->
+    <g class="layer-vision">
+      <path d="M 120 200 L 100 200 L 100 220" stroke="currentColor" stroke-width="1.5"/>
+      <path d="M 380 180 L 400 180 L 400 200" stroke="currentColor" stroke-width="1.5"/>
+      <path d="M 100 340 L 100 360 L 120 360" stroke="currentColor" stroke-width="1.5"/>
+      <path d="M 400 380 L 400 400 L 380 400" stroke="currentColor" stroke-width="1.5"/>
+    </g>
   </svg>
+
   <div class="wrap" style="padding-top:52px; padding-bottom:36px;">
     <p class="eyebrow">Contact</p>
     <h1 class="name" style="font-size:clamp(1.9rem,4vw,2.6rem);">Let's Connect</h1>
-    <p class="tagline" style="font-size:1.05rem; margin-top:14px;">I welcome opportunities for PhD study, research collaborations, Research Scientist positions, and academic roles in Explainable AI, Computer Vision, Deep Learning, and Medical Image Analysis.</p>
+    <p class="tagline" style="font-size:1.05rem; margin-top:14px; max-width: 55ch;">I welcome research collaborations, Research Scientist positions, and opportunities for PhD study in computerized image processing and deep learning, with an earliest availability of September 2026.</p>
   </div>
 </section>
 
@@ -44,6 +66,21 @@
   <section class="block wrap">
     <div class="contact-grid">
 
+      <!-- NEW EMAIL CARD -->
+      <a class="contact-link" href="mailto:mdmominulhq@outlook.com">
+        <span class="icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="7" width="28" height="18" rx="3" stroke="currentColor" stroke-width="2"/>
+            <path d="M2 10l14 9 14-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="contact-text">
+          <span class="label">Email</span>
+          <span class="value">mdmominulhq@outlook.com</span>
+        </span>
+      </a>
+
+      <!-- LINKEDIN CARD -->
       <a class="contact-link" href="https://www.linkedin.com/in/mominulhq/" target="_blank" rel="noopener noreferrer">
         <span class="icon" aria-hidden="true">
           <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -59,6 +96,7 @@
         </span>
       </a>
 
+      <!-- GOOGLE SCHOLAR CARD -->
       <a class="contact-link" href="https://scholar.google.com/citations?user=X43nhjEAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
         <span class="icon" aria-hidden="true">
           <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -68,10 +106,11 @@
         </span>
         <span class="contact-text">
           <span class="label">Google Scholar</span>
-          <span class="value">Research publications &amp; citations</span>
+          <span class="value">Research &amp; citations</span>
         </span>
       </a>
 
+      <!-- ORCID CARD -->
       <a class="contact-link" href="https://orcid.org/0009-0005-0596-2406" target="_blank" rel="noopener noreferrer">
         <span class="icon" aria-hidden="true">
           <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -87,6 +126,7 @@
         </span>
       </a>
 
+      <!-- GITHUB CARD -->
       <a class="contact-link" href="https://github.com/mominulhq" target="_blank" rel="noopener noreferrer">
         <span class="icon" aria-hidden="true">
           <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -96,10 +136,11 @@
         </span>
         <span class="contact-text">
           <span class="label">GitHub</span>
-          <span class="value">Research code &amp; projects</span>
+          <span class="value">Research code</span>
         </span>
       </a>
 
+      <!-- RESEARCHGATE CARD -->
       <a class="contact-link" href="https://www.researchgate.net/profile/Md-Mominul-Haque-2" target="_blank" rel="noopener noreferrer">
         <span class="icon" aria-hidden="true">
           <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -109,10 +150,11 @@
         </span>
         <span class="contact-text">
           <span class="label">ResearchGate</span>
-          <span class="value">Publications &amp; academic profile</span>
+          <span class="value">Academic profile</span>
         </span>
       </a>
 
+      <!-- CV CARD -->
       <a class="contact-link" href="cv.html">
         <span class="icon" aria-hidden="true">
           <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -123,7 +165,7 @@
         </span>
         <span class="contact-text">
           <span class="label">Curriculum Vitae</span>
-          <span class="value">View academic background</span>
+          <span class="value">View background</span>
         </span>
       </a>
 
