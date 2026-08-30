@@ -1,7 +1,5 @@
 # Your website — deployment guide
 
-This is a complete static site: 5 pages, one stylesheet, no build step. Everything below is copy-paste.
-
 ## 1. Put it on GitHub Pages (free hosting under your GitHub account)
 
 Since your GitHub username is `mominulhq`, the cleanest option is a **user site**, which gives you the URL
